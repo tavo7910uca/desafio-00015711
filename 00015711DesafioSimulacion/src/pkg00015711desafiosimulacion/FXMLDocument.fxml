@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="1149.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="973.0" style="-fx-border-color: white;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkg00015711desafiosimulacion.FXMLDocumentController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="65.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="METODO DE LOS ELEMENTOS FINITOS EN TERCERA DIMENSION">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </top>
+   <right>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" layoutX="-14.0" prefWidth="164.0" spacing="35.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Pasos 5 al 8" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#botonPaso5" text="Paso 5" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconos/paso5.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#botonPaso6" text="Paso 6" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconos/paso6.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <SplitMenuButton mnemonicParsing="false" text="Paso 7">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#paso7Elemento1" text="Elemento Local 1" />
+                        <MenuItem mnemonicParsing="false" onAction="#paso7Elemento2" text="Elemento Local 2" />
+                        <MenuItem mnemonicParsing="false" onAction="#paso7Elemento3" text="Elemento Local 3" />
+                        <MenuItem mnemonicParsing="false" onAction="#paso7Elemento4" text="Elemento Local 4" />
+                        <MenuItem mnemonicParsing="false" onAction="#paso7Elemento5" text="Elemento Local 5" />
+                        <MenuItem mnemonicParsing="false" onAction="#paso7Elemento6" text="Elemento Local 6" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#paso7EstructuraGlobal" text="Estructura Elementos Globales" />
+                        <MenuItem mnemonicParsing="false" onAction="#paso7ParteAB" text="Partes A y B" />
+                        <MenuItem mnemonicParsing="false" onAction="#paso7ParteCD" text="Parte C y D" />
+                        <MenuItem mnemonicParsing="false" onAction="#paso7Operaciones1" text="Operaciones" />
+                     </items>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconos/paso7.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </SplitMenuButton>
+                  <SplitMenuButton mnemonicParsing="false" text="Paso 8">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#paso8EstructuraCondiciones" text="Estructura Condiciones de Contorno" />
+                        <MenuItem mnemonicParsing="false" onAction="#paso8ParteFG" text="Partes F y G" />
+                        <MenuItem mnemonicParsing="false" onAction="#paso8ParteHI" text="Partes H e I" />
+                        <MenuItem mnemonicParsing="false" onAction="#paso8Operaciones2" text="Operaciones 2" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#paso8EstructuraSistemaEcuaciones" text="Estructura Sistema de Ecuaciones" />
+                        <MenuItem mnemonicParsing="false" onAction="#paso8ParteJK" text="Partes J y K" />
+                        <MenuItem mnemonicParsing="false" onAction="#paso8ParteLM" text="Partes L y M" />
+                        <MenuItem mnemonicParsing="false" onAction="#paso8Operaciones3" text="Operaciones 3" />
+                     </items>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconos/paso8.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </SplitMenuButton>
+                  <Button fx:id="salida" alignment="CENTER" mnemonicParsing="false" onAction="#botonSalir" text="Salir" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconos/salir.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </right>
+   <left>
+      <AnchorPane prefHeight="490.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="544.0" prefWidth="100.0" spacing="40.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Pasos 1 al 4" textAlignment="RIGHT">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <SplitMenuButton mnemonicParsing="false" text="PreProceso">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#botonPreprocesoDominio" text="Concepto de Dominio" />
+                        <MenuItem mnemonicParsing="false" onAction="#botonPreprocesoCondicionesContorno" text="Concepto de Condiciones de Contorno" />
+                        <MenuItem mnemonicParsing="false" onAction="#botonPreprocesoMalla" text="Concepto de Malla" />
+                        <MenuItem mnemonicParsing="false" onAction="#botonPreprocesoElementosMalla" text="Elementos de la Malla" />
+                        <MenuItem mnemonicParsing="false" onAction="#botonPreprocesoTablaConectividades" text="Tabla de Conectividades" />
+                     </items>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </SplitMenuButton>
+                  <Button alignment="CENTER" cache="true" onAction="#botonPaso1" text="Paso 1" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconos/paso1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button alignment="CENTER" cache="true" onAction="#botonPaso2" text="Paso 2" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconos/paso2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button alignment="CENTER" cache="true" onAction="#botonPaso3" text="Paso 3" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconos/paso3.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button alignment="CENTER" cache="true" onAction="#botonPaso4" text="Paso 4" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconos/paso4.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <bottom>
+      <AnchorPane prefHeight="64.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <HBox alignment="CENTER" prefHeight="27.0" prefWidth="1000.0" spacing="50.0" BorderPane.alignment="CENTER">
+                     <padding>
+                        <Insets bottom="20.0" top="20.0" />
+                     </padding>
+                     <children>
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#botonMatrizE" text="Matriz E" textAlignment="CENTER">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../iconos/componentes.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#botonMatrizZ" text="Matriz Z" textAlignment="CENTER">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../iconos/componentes.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#botonMatrizK" text="Matriz K" textAlignment="CENTER">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../iconos/componentes.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#botonMatrizM" text="Matriz M" textAlignment="CENTER">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../iconos/componentes.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#botonMatrizF" text="Matriz f" textAlignment="CENTER">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../iconos/componentes.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#botonMatrizH" text="Matriz h" textAlignment="CENTER">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../iconos/componentes.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </HBox>
+               </center>
+               <top>
+                  <HBox alignment="CENTER" prefWidth="1000.0" BorderPane.alignment="CENTER_LEFT">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Componentes De Matrices">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="15.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+               </top>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="472.0" prefWidth="627.0" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane prefHeight="472.0" prefWidth="673.0" style="-fx-border-color: #2A325E;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <content>
+                <AnchorPane prefHeight="369.0" prefWidth="674.0">
+                     <children>
+                        <ImageView fx:id="imageView" fitHeight="861.0" fitWidth="658.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../capturasDePantalla/welcomeScreen.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
